@@ -37,4 +37,4 @@ Bileşenin props veya state aldığında meydana gelen değişiklik. ComponentDi
 
 ## Ekran Görüntüsü
 
-![](./assets/counter.png)
+![](./assets/counter1.png)
