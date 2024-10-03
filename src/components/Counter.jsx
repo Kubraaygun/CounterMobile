@@ -1,20 +1,35 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React from 'react';
+import {useState} from 'react';
 
 const Counter = () => {
+  const [count, setCount] = useState(10);
+
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        onPress={() => setCount(count - 1)}
+        disabled={count === 0}
+        style={[
+          styles.button,
+          {backgroundColor: count < 10 ? 'red' : 'green'},
+        ]}>
         <Text style={styles.buttonText}>Azalt</Text>
       </TouchableOpacity>
 
-      <Text style={styles.countText}>0</Text>
+      <Text style={styles.countText}>{count}</Text>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        onPress={() => setCount(count + 1)}
+        style={[
+          styles.button,
+          {backgroundColor: count > 10 ? 'red' : 'green'},
+        ]}>
         <Text style={styles.buttonText}>Arttır</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        onPress={() => setCount(0)}
+        style={[styles.button, {backgroundColor: 'blue'}]}>
         <Text style={styles.buttonText}>Sıfırla</Text>
       </TouchableOpacity>
     </View>
@@ -36,7 +51,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   buttonText: {
-    color: 'red',
+    color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
   },
