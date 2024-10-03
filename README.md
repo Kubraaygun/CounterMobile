@@ -34,3 +34,7 @@ Bileşenin props veya state aldığında meydana gelen değişiklik. ComponentDi
 2. 2.parametre -> dolu bir bağımlılık dizisi
 
 -- `useEffect(()=>{},[page,button,count])`
+
+## Ekran Görüntüsü
+
+![](./assets/counter.png)
