@@ -1,8 +1,13 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 const Counter = () => {
   const [count, setCount] = useState(10);
+
+  //1) Bilesenin ekrana basilma olayini izle
+  useEffect(() => {
+    console.log('bilesen ekrana basildi');
+  }, []);
 
   return (
     <View style={styles.container}>
