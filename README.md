@@ -1,4 +1,4 @@
-# Props (veri aktarımı)
+# Props (Data Transfer)
 
 - Bir bileşenden diğerine veri aktarmak için kullandığmız yöntem
 - Her zaman üst bileşenden aşağıya doğru veri aktarım yönü vardır.
