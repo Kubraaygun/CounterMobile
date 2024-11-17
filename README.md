@@ -1,16 +1,16 @@
 # Props (Data Transfer)
 
-- Bir bileşenden diğerine veri aktarmak için kullandığmız yöntem
-- Her zaman üst bileşenden aşağıya doğru veri aktarım yönü vardır.
+- With methods for transferring data from one member to another
+- Always have the correct view of data managed from the top level.
 
 # State
 
 # useEffect
 
-Bileşenin ekrana gelme olayı. ComponentDidMount--Dogma
+The event of the component appearing on the screen. ComponentDidMount--Dogma
 
-1. 1.parametre -> çalışacak olan callback function
-2. 2.parametre -> boş bir bağımlılık dizisi
+1. 1st parameter -> callback function to be run
+2. 2nd parameter -> an empty dependency array
 
 -- `useEffect(()=>{},[])`
 Bileşenin ekrandan gitme olayı. ComponentWillUnmount
