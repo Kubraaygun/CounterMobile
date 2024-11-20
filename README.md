@@ -13,28 +13,28 @@ The event of the component appearing on the screen. ComponentDidMount--Dogma
 2. 2nd parameter -> an empty dependency array
 
 -- `useEffect(()=>{},[])`
-Bileşenin ekrandan gitme olayı. ComponentWillUnmount
+The event of the component leaving the screen: ComponentWillUnmount.
 
-1. 1.parametre -> çalışacak olan callback function
-2. 2.parametre -> boş bir bağımlılık dizisi
-   -- çalışacak olan fonksiyonun return satırına bir fonksiyon eklenir ve bu fonksiyon bileşen ekrandan gittiğinde oluşur
+1. 1st parameter -> the callback function to execute
+2. 2. 2nd parameter -> an empty dependency array
+   --A function is added to the return statement of the function to be executed, and this function is triggered when the component leaves the screen.
 
 -- `useEffect(()=> {return ()=>{}},[])`
 
-Bileşenin props veya state aldığında meydana gelen değişiklik. ComponentDidUpdate--Güncelleme
+The change that occurs when the component receives new props or state: `ComponentDidUpdate` – Update.
 
-1. 1.parametre -> çalışacak olan callback function
-2. 2.parametre -> yok
+1. 1st parameter -> the callback function to execute
+2. 2nd parameter -> none
 
 -- `useEffect(()=>{})`
 
-Bileşenin props veya state aldığında meydana gelen değişiklik. ComponentDidUpdate--2
+The change that occurs when the component receives new props or state: `ComponentDidUpdate` – 2nd parameter.
 
-1. 1.parametre -> çalışacak olan callback function
-2. 2.parametre -> dolu bir bağımlılık dizisi
+1. 1st parameter -> the callback function to execute  
+2. 2nd parameter -> a filled dependency array
 
 -- `useEffect(()=>{},[page,button,count])`
 
-## Ekran Görüntüsü
+## Screenshot
 
 ![](./assets/counter1.png)
